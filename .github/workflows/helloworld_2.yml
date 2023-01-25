@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: Show date and time
+        run: echo "TODAY = $(date + %y-%m-%d)" >> $GITHUB_ENV
+        run: echo Hello World, today is TODAY
+          
